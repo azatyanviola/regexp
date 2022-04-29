@@ -31,3 +31,11 @@ let str1 = `... <!-- My -- comment
 `;
 
 alert( str1.match(regexp4) ); // '<!-- My -- comment \n test -->', '<!---->'
+
+//***************** */
+
+let regexp5 = /<[^<>]+>/g;
+
+const str2 = '<> <a href="/"> <input type="radio"> <b>';
+
+console.log( str2.match(regexp5) );
