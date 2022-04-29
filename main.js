@@ -39,3 +39,11 @@ let regexp5 = /<[^<>]+>/g;
 const str2 = '<> <a href="/"> <input type="radio"> <b>';
 
 console.log( str2.match(regexp5) );
+
+//***************** */
+
+let regexp6 = /#([a-f0-9]{3}){1,2}\b/gi;
+
+const str3 = 'color: #3f3; background-color: #AA00ef; and: #abcd';
+
+console.log( str3.match(regexp6) ); // #3f3 #AA00ef
