@@ -16,3 +16,18 @@ let regexp2 = /\.{3,}/g;
 console.log('Hello!... , How are you?.....'.match(regexp2)); // ...,   .....
 
 //*************** */
+
+let regexp3 = /#[a-f0-9]{6}/gi;
+
+const str = 'color:#121212; background-color:#AA00ef bad-colors:f#fddee #fd2 ';
+
+console.log( str.match(regexp3) ); // // #121212, #AA00ef
+
+//************** */
+let regexp4 = /<!--.*?-->/gs;
+
+let str1 = `... <!-- My -- comment
+ test --> ..  <!----> ..
+`;
+
+alert( str1.match(regexp4) ); // '<!-- My -- comment \n test -->', '<!---->'
