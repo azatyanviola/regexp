@@ -47,3 +47,11 @@ let regexp6 = /#([a-f0-9]{3}){1,2}\b/gi;
 const str3 = 'color: #3f3; background-color: #AA00ef; and: #abcd';
 
 console.log( str3.match(regexp6) ); // #3f3 #AA00ef
+
+//********************** */
+
+let regexp7 = /-?\d+(\.\d+)?/g;
+
+const str4 = '-7.5 0 10 -2226.4';
+
+console.log( str4.match(regexp7) ); // -7.5, 0, 10, -2226.4
