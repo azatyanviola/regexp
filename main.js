@@ -55,3 +55,11 @@ let regexp7 = /-?\d+(\.\d+)?/g;
 const str4 = '-7.5 0 10 -2226.4';
 
 console.log( str4.match(regexp7) ); // -7.5, 0, 10, -2226.4
+
+//************* */
+
+let regexp8 = /Java(Script)?|C(\+\+)?|PHP/g;
+
+const str5 = 'Java, JavaScript, PHP, C, C++';
+
+console.log( str5.match(regexp8) ); // Java,Java,PHP,C,C
